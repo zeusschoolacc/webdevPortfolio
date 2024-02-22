@@ -150,6 +150,13 @@ body {
 
 
 /* GALLERY CSS */
+.galleryBody {
+    background-image: url("./img/gallerybg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
 
 
