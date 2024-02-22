@@ -68,7 +68,7 @@ body {
     font-size: 14px;
 }
 
-#home {
+#gallery {
     color: white;
     background-color: var(--button-color);
 }
@@ -147,6 +147,18 @@ body {
 .hobbies > ul > li {
     margin-left: 22px;
 }
+
+
+/* GALLERY CSS */
+
+
+
+
+
+
+
+
+
 
 /*SVG*/
 .ion--home {
