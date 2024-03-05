@@ -57,13 +57,18 @@
         const body = document.querySelector(".galleryBody");
         images.forEach((image) => {
             image.addEventListener("click", () => {
-                alert(`IMAGE CLICKED ${image.src}`);
-                const bigImageContainer = document.createElement("div");
+                const bigImageContainer = document.createElement("dialog");
                 const bigImage = document.createElement("img");
+                bigImage.className = "bigImage";
                 bigImageContainer.className = "bigImageContainer";
                 bigImage.src = image.src;
                 bigImageContainer.appendChild(bigImage);
                 body.appendChild(bigImageContainer);
+                bigImageContainer.show();
+                
+                bigImage.addEventListener("click", () => {
+                    bigImageContainer.close();
+                })
             });
         })
     </script>

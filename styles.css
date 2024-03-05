@@ -201,11 +201,15 @@ body {
     border-radius: 27px;
 }
 
-.post > img {
+.postImg {
     width: 15vw;
     height: 9vw;
     border-radius: 25px;
     object-fit: cover;
+}
+
+.postImg:hover {
+    cursor: pointer;
 }
 
 .post > p {
@@ -214,6 +218,26 @@ body {
     font-weight: 600;
 }
 
+.bigImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.bigImageContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.57);
+}
+
+.bigImage:hover {
+    cursor: pointer;
+}
 
 /*SVG*/
 .ion--home {
