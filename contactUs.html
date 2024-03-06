@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="contactBody">
-    <a href="./index.html">GO HOME</a>
+    <div class="contactMain">
+        <a id="contactBack" href="./index.html"><span class="mingcute--back-fill"></span></a>
+        <span class="solar--letter-bold"></span>
+        <form action="#">
+            <div class="git">
+                <h3>Get in touch!</h3>
+            </div>
+            <div class="first Input">
+                <input id="fName" type="text" placeholder="First Name" required>
+                <input id="lName" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="second Input">
+                <input id="contactNum" type="text" placeholder="Contact Number" required>
+                <input id="email" type="email" placeholder="Email" required>
+            </div>
+            <textarea id="text" cols="60" rows="10" placeholder="Message Here..."></textarea>
+            <button type="button" id="contactB">Submit</button>
+        </form>
+    </div>
+    <script>
+        const submit = document.getElementById("contactB");
+        const fName = document.getElementById("fName");
+        const lName = document.getElementById("lName");
+        const number = document.getElementById("contactNum");
+        const email = document.getElementById("email");
+        const message = document.getElementById("text");
+
+        submit.addEventListener("click", () => {
+            if(fName.value !== "" && lName.value !== "" && number.value !== "" && email.value !== "" && message.value !== ""){
+                alert("Form Submitted!");
+                fName.value = "";
+                lName.value = "";
+                number.value ="";
+                email.value = "";
+                message.value = "";
+            }
+            else {
+                alert("INPUT INVALID!");
+            }
+        })
+    </script>
 </body>
 </html>
